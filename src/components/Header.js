@@ -3,10 +3,10 @@ import myntralogo from '../images/myntra_logo.webp'
 const Header = () => {
   return (
     <div className='bg-[#ffffff] flex h-[80px] fixed w-[100%] top-[0px]'>
-      <div className='w-[10%] flex justify-center items-center'>
+      <div className='w-[10%] flex justify-center items-center phone:w-[30%]'>
         <img className='h-[40px]' src={myntralogo} />
       </div>
-      <div className='w-[50%] flex flex-row items-center'>
+      <div className='w-[50%] flex flex-row items-center phone:hidden'>
         <div className='px-[12px] cursor-pointer'><a className='font-bold'>MEN</a></div>
         <div className='px-[12px] cursor-pointer'><a className='font-bold'>WOMEN</a></div>
         <div className='px-[12px] cursor-pointer'><a className='font-bold'>KIDS</a></div>
@@ -14,7 +14,7 @@ const Header = () => {
         <div className='px-[12px] cursor-pointer'><a className='font-bold'>BEAUTY</a></div>
         <div className='px-[12px] cursor-pointer'><a className='font-bold'>STUDIO</a></div>
       </div>
-      <div className='w-[25%] flex justify-center items-center relative'>
+      <div className='w-[25%] flex justify-center items-center relative phone:w-[30%]'>
         <div className='absolute left-[10px]'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <input className='h-[50%] w-[100%] bg-[#f5f5f6] rounded pl-[40px] focus:bg-[white] focus:outline-none focus:border-[2px]' type='text' placeholder='Search for products, brands and many more' />
       </div>
-      <div className='w-[15%] flex flex-row items-center'>
+      <div className='w-[15%] flex flex-row items-center phone:w-[40%]'>
         <div className='flex-1 flex flex-col cursor-pointer'>
           <div className='flex justify-center'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 stroke-1">

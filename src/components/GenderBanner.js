@@ -8,7 +8,7 @@ import Myntra200 from '../images/myntra200.webp';
 const GenderBanner = () => {
   return (
     <div>
-      <div className='mt-[25px] mt-[60px]'>
+      <div className='mt-[25px] mt-[60px] phone:mt-[75px]'>
         <img src={Banner} alt='Banner' />
       </div>
       <div>
